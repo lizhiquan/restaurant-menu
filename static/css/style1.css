@@ -1,45 +1,14 @@
-/* ----------------------------------------------
-:: Template Name: Yummy Blog - Food Blog Template
-:: Template Author: Colorlib
-:: Template Author URI: https://colorlib.com
-:: Version: v1.0.0
-:: Last Updated: 11-13-2017
----------------------------------------------- */
-
-/* -------- [Master Stylesheet] --------
-:: 1.0 Base CSS
-:: 2.0 Top Header Area CSS
-:: 3.0 Menu Area CSS
-:: 4.0 Wellcome Area CSS 
-:: 5.0 Top Feature Area CSS 
-:: 6.0 Blog Area CSS 
-:: 7.0 Instagram Area CSS 
-:: 8.0 Footer Social Area CSS 
-:: 9.0 Goole Map Area CSS
-:: 10.0 Sidebar Area CSS
-:: 11.0 Breadcumb Area CSS
-:: 12.0 Paginatio Area CSS
-:: 13.0 Contact Area CSS
-:: 14.0 Single Blog CSS
------------------------------------ */
-
-/* ***** Fonts ***** */
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Shadows+Into+Light+Two');
 
 /* ***** Import CSS ***** */
 
-@import 'css/bootstrap/bootstrap.min.css';
-@import 'css/others/animate.css';
-@import 'css/others/magnific-popup.css';
-@import 'css/others/meanmenu.min.css';
-@import 'css/others/owl.carousel.min.css';
-@import 'css/others/font-awesome.min.css';
-@import 'css/others/pe-icon-7-stroke.css';
-
-/* --------------------
-:: 1.0 Base CSS
--------------------- */
+/* @import 'css/bootstrap/bootstrap.min.css'; */
+/* @import 'others/animate.css';
+@import 'others/magnific-popup.css';
+@import 'others/meanmenu.min.css';
+@import 'others/owl.carousel.min.css';
+@import 'others/font-awesome.min.css';
+@import 'others/pe-icon-7-stroke.css'; */
 
 * {
     margin: 0;
