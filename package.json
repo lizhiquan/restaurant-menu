@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lizhiquan/recipe/issues"
   },
-  "homepage": "https://github.com/lizhiquan/recipe#readme"
+  "homepage": "https://github.com/lizhiquan/recipe#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
