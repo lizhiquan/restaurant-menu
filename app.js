@@ -2,8 +2,15 @@ const data = require('./core/data');
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
-
 const app = express();
+const admin = require('firebase-admin');
+
+const serviceAccount = require("./apple-cdd1b-firebase-adminsdk-bvz4f-d811c7cd9e.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://apple-cdd1b.firebaseio.com"
+});
 
 app.use('/css', express.static('static/css'));
 app.use('/fonts', express.static('static/fonts'));
@@ -15,14 +22,21 @@ app.get('/', (req, res) => {
     res.send(indexPage);
 })
 
-app.get('/ingredients', (req, res) => {
-    let dish = req.query['dish'];
-    if (dish == 'gimbab') {
-        res.send(data.getGimbabIngredients());
-    } else if (dish == 'beefnoodlesalad') {
-        res.json(data.getBeefNoodleSaladIngredients());
+app.get('/dishes', (req, res) => {
+    let dish = req.query['type'];
+    if (dish == 'breakfast') {
+        res.send(data.getBreakfastDishes());
+    } else if (dish == 'lunch') {
+        res.json(data.getLunchDishes());
+    } else if (dish == 'dinner') {
+        var db = admin.database();
+        db.ref()
+            .child("dishes")
+            .once("value", function(snapshot) {
+                res.json(snapshot.val());
+            });
     } else {
-        res.send({ msg: "Dish not found!" });
+        res.send({ msg: "Type not found!" });
     }
 });
 
