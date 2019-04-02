@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Signika:600|Poppins:500');
+
+body {
+    font-family: 'Signika', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bolder;
+    font-size: 18pt;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 14pt;
+}
+
+.active {
+    color: #997141 !important;
+}
+
+a:hover {
+    color: #997141 !important;
+}
+
+a {
+    color: black;
+}
+
+header a {
+    color: white;
+}
+
+#menu-title {
+    font-size: 40pt;
+}
+
 header {
     height: 300px;
     background-color: black;
@@ -36,12 +74,17 @@ header nav ol {
     margin-right: 5%;
 }
 
-.dish-item h6 {
-    margin-top: 30px;
+.dish-item h5 {
+    margin-top: 40px;
 }
 
 footer {
     clear: both;
+    height: 50px;
+}
+
+.text-muted {
+    line-height: 50px;
 }
 
 main {
@@ -49,6 +92,9 @@ main {
 }
 
 .price {
+    font-weight: bold;
+    font-size: 16pt;
+    color: #997141;
 }
 
 @media only screen and (max-width: 880px) {

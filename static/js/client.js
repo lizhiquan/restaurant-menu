@@ -4,17 +4,29 @@ $(document).ready(() => {
     $('#breakfast').click(function(e) {
         e.preventDefault();
 
+        $("#breakfast").addClass("active");
+        $("#lunch").removeClass("active");
+        $("#dinner").removeClass("active");
+
         fetchBreakfast();
     });
 
     $('#lunch').click(function(e) {
         e.preventDefault();
 
+        $("#breakfast").removeClass("active");
+        $("#lunch").addClass("active");
+        $("#dinner").removeClass("active");
+
         fetchDishes("lunch");
     });
 
     $('#dinner').click(function(e) {
         e.preventDefault();
+
+        $("#breakfast").removeClass("active");
+        $("#lunch").removeClass("active");
+        $("#dinner").addClass("active");
 
         fetchDishes("dinner");
     });
@@ -49,7 +61,7 @@ function fetchDishes(type) {
                 htmlStr += `<div class='dish-item'>
                 <img src="${data[i].img}" alt="">
                 <div class="item-desc">
-                  <h6>${data[i].name}</h6>
+                  <h5>${data[i].name}</h5>
                   <div class="price">$${data[i].price}</div>
                 </div>
                 </div>`

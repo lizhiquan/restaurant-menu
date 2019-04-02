@@ -2,70 +2,70 @@ let breakfastDishes = `
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/break_1.jpg" alt="">
 <div class="item-desc">
-  <h6>Barrel's Breakfast</h6>
+  <h5>Barrel's Breakfast</h5>
   <div class="price">$20</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/break_3.jpg" alt="">
 <div class="item-desc">
-  <h6>Chinese Breakfast</h6>
+  <h5>Chinese Breakfast</h5>
   <div class="price">$70</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/break_5.jpg" alt="">
 <div class="item-desc">
-  <h6>Vegetarian Spicy</h6>
+  <h5>Vegetarian Spicy</h5>
   <div class="price">$20</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/break_2.jpg" alt="">
 <div class="item-desc">
-  <h6>English Breakfast</h6>
+  <h5>English Breakfast</h5>
   <div class="price">$60</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/break_4.jpg" alt="">
 <div class="item-desc">
-  <h6>Eggs Breakfast</h6>
+  <h5>Eggs Breakfast</h5>
   <div class="price">$55</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/break_6.jpg" alt="">
 <div class="item-desc">
-  <h6>Cupcake Recipes</h6>
+  <h5>Cupcake Recipes</h5>
   <div class="price">$25</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/dess_1.jpg" alt="">
 <div class="item-desc">
-  <h6>Capo Steak</h6>
+  <h5>Capo Steak</h5>
   <div class="price">$30</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/dess_5.jpg" alt="">
 <div class="item-desc">
-  <h6>Chinese Spicy</h6>
+  <h5>Chinese Spicy</h5>
   <div class="price">$25</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/dess_2.jpg" alt="">
 <div class="item-desc">
-  <h6>Eggs Benedict</h6>
+  <h5>Eggs Benedict</h5>
   <div class="price">$25</div>
 </div>
 </div>
 <div class="dish-item">
 <img src="http://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/dess_6.jpg" alt="">
 <div class="item-desc">
-  <h6>Spicy Cheese</h6>
+  <h5>Spicy Cheese</h5>
   <div class="price">$35</div>
 </div>
 </div>
