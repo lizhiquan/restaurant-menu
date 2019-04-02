@@ -33,11 +33,11 @@ header a {
 }
 
 #menu-title {
-    font-size: 40pt;
+    font-size: 60pt;
 }
 
 header {
-    height: 300px;
+    height: 180px;
     background-color: black;
     color: white;
     position: relative;
@@ -97,20 +97,124 @@ main {
     color: #997141;
 }
 
-@media only screen and (max-width: 880px) {
+.breadcrumb{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 5px;
+}
+/*******Sliders Pictures hover animation********/
+/******* Grayscale filter is used *******/
+ img.mySlides {
+     -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+     filter: grayscale(100%);
+     transition: all 1s ease;
+     
+     width:100%;
+ }
+
+ img.mySlides:hover {
+     -webkit-filter: grayscale(0%);
+     -moz-filter: grayscale(0%);
+     filter: grayscale(0%);
+ }
+/*******fading Pictures animation********/
+.img-content{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:850px;
+    margin-top:16px;
+    margin-bottom:16px!important;
+}
+
+.img-animate-fading{
+    animation:fading 10s infinite
+}
+
+@keyframes fading
+{
+    0%      {opacity:0}
+    50%     {opacity:1}
+    100%    {opacity:0}
+}
+/*************Recipe letter top animation**********/
+.recipe-animate-top, .breadcrumb-item{
+    position:relative;
+    animation:animatetop 1.5s;
+}
+
+@keyframes animatetop
+{
+    from    {top:-300px; opacity:0} 
+    to      {top:0; opacity:1}
+}
+
+/***********************************************/
+.foodlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.foodlist div img {
+    width: 97%;
+    height:97%;
+}
+/***********************************************/
+div.recipe{
+    margin:20px;
+}
+
+
+/***********************************************/
+@media only screen and (max-width: 400px) {
     .dish-item {
         width: 100%;
     }
+    #breakfast #lunch #dinner {
+        display: table-row;
+    }
+    #menu-title{
+        font-size: 40pt;
+    }
+    header {
+        height: 103px;
+    }
+    .breadcrumb-item{
+        transform: translate(7px, -15px);
+    }
+    .foodlist{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 }
 
-@media only screen and (max-width: 1270px) and (min-width: 881px) {
+@media only screen and (max-width: 800px) and (min-width: 400px) {
     .dish-item {
         width: 50%;
     }
+    #menu-title{
+        font-size: 50pt;
+    }
+    header {
+        height: 150px;
+    }
+    .breadcrumb-item{
+        transform: translate(20px, -10px);
+    }
+    .img-content{
+        max-width:700px;
+    }
 }
 
-@media only screen and (min-width: 1271px) {
+@media only screen and (min-width: 800px) {
     .dish-item {
         width: 33.3%;
     }
+    .breadcrumb-item{
+        transform: translate(30px, 0);
+        font-size: 20px;
+    }
+    .img-content{
+        margin-top:30px;
+    }
+    
 }
