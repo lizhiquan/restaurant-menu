@@ -46,5 +46,5 @@ app.use((req, res, next) => {
 
 const port = 8000;
 app.listen(port, () => {
-    console.log("Recipe app listening on port " + port + "!");
+    console.log("Menu app listening on port " + port + "!");
 });

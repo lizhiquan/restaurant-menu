@@ -160,12 +160,6 @@ main {
 /********** menu hover animation *************/
 /********** transform used *************/
 
-h3.item-desc {
-	animation: hover_ani_dance 4s 2;
-	&:hover {
-		animation: hover_ani_scale 0.2s 2;
-	}
-}
 .item-desc:hover {
 	animation: hover_ani_dance 4s infinite;
 	&:hover {
