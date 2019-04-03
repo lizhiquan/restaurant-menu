@@ -134,7 +134,7 @@ main {
 }
 
 .img-animate-fading {
-    animation: fading 10s infinite
+    animation: fading 5s infinite
 }
 
 @keyframes fading {

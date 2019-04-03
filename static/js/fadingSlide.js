@@ -1,5 +1,6 @@
 var myIndex = 0;
 myFadingSlide();
+setInterval(myFadingSlide, 5000);
 
 function myFadingSlide() {
     var i;
