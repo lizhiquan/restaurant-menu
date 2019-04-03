@@ -44,7 +44,7 @@
 
   <header>
     <div>
-      <h1 id="menu-title">Menu</h1>
+      <h1 id="menu-title" class="menu-animate-top">Menu</h1>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -67,10 +67,37 @@
       </li>
     </ul>
   </nav>
+    
+  <div class="todaySpecial">
+      <h3 class="item-desc">Today's Special!</h3>
+      <div class="img-content">
+          <img class="mySlides img-animate-fading" src="./img/canadian_poutine.jpg">
+          <img class="mySlides img-animate-fading" src="./img/korean_bulgogi%20_rice.jpg">
+          <img class="mySlides img-animate-fading" src="./img/Vietnamese_Egg_Rolls_Cha_Gio2.jpg">
+          <img class="mySlides img-animate-fading" src="./img/Vietnamese_Caolau.jpg">
+      </div>
+      <script>
+          var myIndex = 0;
+          carousel();
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 9000);
+          }
+      </script>
+  </div>
 
   <main id="dishes">
     
   </main>
+    
+
 
   <footer class="footer navbar-fixed-bottom">
     <div class="container">
