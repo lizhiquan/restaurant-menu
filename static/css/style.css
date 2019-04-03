@@ -63,21 +63,22 @@ header nav ol {
 .dish-item {
     height: 130px;
     float: left;
-    margin: 1% 0;
-    padding: 0 10px;
+    margin: 1% 1%;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 }
 
 .dish-item img {
     height: 100%;
-    width: 200px;
+    width: 180px;
     float: left;
     margin-right: 5%;
     border-radius: 3px;
 }
 
 .dish-item h5 {
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 footer {
@@ -175,9 +176,6 @@ main {
 
 .item-desc:hover {
     animation: hover_ani_dance 4s infinite;
-    &:hover {
-        animation: hover_ani_scale 0.2s infinite;
-    }
 }
 
 @keyframes hover_ani_scale {
@@ -218,7 +216,6 @@ main {
 @media only screen and (max-width: 400px) {
     .dish-item {
         width: 100%;
-        /*        margin-bottom: 80px;*/
         text-align: center;
         height: auto;
         float: clear;
@@ -273,7 +270,7 @@ main {
 
 @media only screen and (max-width: 1110px) and (min-width: 750px) {
     .dish-item {
-        width: 50%;
+        width: 48%;
     }
     #menu-title {
         font-size: 50pt;
@@ -291,7 +288,7 @@ main {
 
 @media only screen and (min-width: 1110px) {
     .dish-item {
-        width: 33.3%;
+        width: 31.3%;
     }
     .breadcrumb-item {
         transform: translate(25px, 0);
